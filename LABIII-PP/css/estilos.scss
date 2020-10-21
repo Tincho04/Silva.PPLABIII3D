@@ -1,0 +1,200 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    // min-width: 600px;
+}
+
+main {
+    background-color: $main_color;
+    border: 100px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    justify-content: space-around;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+}
+
+form {
+    background-color: $form_color;
+    width: 1000px;
+    height: 650px;
+    margin: 150px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+    text-align: center;
+    input {
+        box-sizing: border-box;
+        padding: 2%;
+        font-size: 1rem;
+        border: none
+    }
+}
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    align-items: flex-end;
+    justify-content: flex-end;
+    button {
+        text-decoration: none;
+        padding: 10px;
+        font-weight: 600;
+        font-size: 20px;
+        color: white;
+        background-color: $button_color;
+        border-radius: 6px;
+        border: 2px solid $button_border;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    button:hover {
+        color: $button_color_hover_back;
+        background-color: $button_color_hover;
+    }
+}
+
+body {
+    min-width: 600px;
+}
+
+table {
+    width: 1000px;
+    background-color: whitesmoke;
+    text-align: left;
+    border-collapse: collapse;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+th,
+td {
+    border: solid 1px black;
+    padding: 20px;
+}
+
+tr:nth-child(even) {
+    background-color: $tr_pares;
+}
+
+thead {
+    background-color: $button_color_hover_back;
+    border-radius: 5px solid $button_table_border_thead;
+}
+
+header {
+    background-image: $background_img;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    height: 800px;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    img {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        height: 100px;
+        width: 100px;
+    }
+    nav {
+        display: flex;
+        a {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: lighter;
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+            margin: 15px;
+            padding-top: 30px;
+            color: white;
+            text-decoration: none;
+        }
+    }
+    form {
+        width: 600px;
+        margin: 0;
+        align-items: left;
+    }
+}
+
+footer {
+    nav {
+        display: flex;
+        a {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: lighter;
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+            margin: 15px;
+            padding-top: 30px;
+            color: white;
+            text-decoration: none;
+        }
+    }
+}
+
+.barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    height: 100px;
+    width: 100%;
+    background-color: orange;
+    nav {
+        text-decoration: none;
+        display: flex;
+        color: white;
+    }
+}
+
+
+/*footer{
+    @include mx_footer_header($header_footer_color);
+    nav{
+        display: flex;
+        a{/* desendientes 'a' de  'nav' en el medio puede haber cualquier cosa, todo desendiente.*/
+
+
+/*nav>a hijo directo */
+
+
+/* color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+            background-color: blue;
+            padding: 10px 20px  ;/*entendemos el borde*/
+
+
+/*   border: 1px solid black;
+        }
+    }
+}*/
+
+footer p {
+    color: white;
+}
+
+//**************** response******************************
+@media screen and(max-width:700px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        height: 400px;
+        /* nav{
+            align-items: center;
+        };*/
+    }
+}

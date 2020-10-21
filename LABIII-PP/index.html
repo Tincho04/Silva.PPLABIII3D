@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" />
+    <script src=".js/scripts.js" defer type="module"></script>
+    <title>Practica Parcial</title>
+</head>
+
+<body>
+    <header>
+        <div class="barra">
+            <img src="./img/car.png" alt="">
+            <nav id="navprop">
+                <a href="">Nosotros</a>
+                <a href="">Anuncio</a>
+                <a href="">Blog</a>
+                <a href="">Contacto</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h1>Administracion</h1>
+        <section class="container" id="dataIn">
+            <fieldset>
+                <legend>Información del anuncio </legend>
+
+                <form>
+                    <label>
+                        <input type="text" id="txtId" placeholder="ID" name="id" disabled=true hidden=true>
+                  </label>
+
+                    <label>
+                      TITULO:   <input type="text" id="txtTitulo" placeholder="Titulo" name="titulo" required>
+                </label>
+                    <br>
+                    <label>TRANSACCION:  
+                        <br><br>      
+                    <label for="venta"><input type="radio" name="trans" id="venta" value="Venta" checked>Venta</label>
+                    <label for="alqui"><input type="radio" name="trans" id="alqui" value="Alquiler">Alquiler</label><br><br>
+                    </label>
+
+                    <label>
+                        DESCRIPCION:   <input type="text" id="txtDescripcion" placeholder="Descripcion" name="descripcion" required>
+                  </label>
+
+                    <label>
+                    PRECIO:   <input type="text" id="txtPrecio" placeholder="Precio" name="precio" required>
+              </label>
+                    <div class="logo-opcion">
+                        <img src="./img/kissclipart-car-door-icon-clipart-car-door-vehicle-4c2196db96651c81.png" id="props">
+                        <p> <input type="text" id="txtPuertas" placeholder="Puertas" name="Puertas"></p>
+                        <img src="./img/kissclipart-rpm-icon-clipart-car-computer-icons-clip-art-b2bf7070842d23fc.png" id="props">
+                        <p> <input type="text" id="txtKm" placeholder="Km" name="Km"></p>
+                        <img src="./img/kisspng-car-computer-icons-engine-5ae1e04db3d8f1.2177164515247524617367.png" id="props">
+                        <p> <input type="text" id="txtPotencia" placeholder="Potencia" name="Potencia"></p>
+                    </div><br>
+
+                    <br>
+                    <div class="botones">
+                        <button type="submit" id="btnAlta">
+                <i class="fa fa-floppy-o fa-spin fa-1x" aria-hidden="true"></i>  Guardar</button>
+                        <button type="button" id="btnTabla">Visualizar Tabla</button>
+                        <button type="button" id="btnEscTabla" hidden=true>Esconder Tabla</button>
+                        <button type="button" id="btnModificar" hidden=true>Modificar</button>
+                        <button type="button" id="btnEliminar" hidden=true>Eliminar</button>
+                        <button type="button" id="btnLimpiar" hidden=true>Limpiar</button>
+                    </div>
+            </fieldset>
+            </form>
+        </section>
+        <br><br>
+        <div id="spinner">
+            <img src="./img/523669_2a4980fbb195ea20ece4db271d6a4efc.gif">
+        </div><br><br>
+        <section class="container">
+            <div id="divTabla">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="barra">
+            <nav>
+                <a href="">Nosotros</a>
+                <a href="">Anuncio</a>
+                <a href="">Blog</a>
+                <a href="">Contacto</a>
+            </nav>
+            <p>Todos los derechos recervados &copy</p>
+        </div>
+    </footer>
+</body>
+
+</html>
